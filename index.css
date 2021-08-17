@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: white;
+}
+
+.nav-btn>button{
+    background-color: white;
+    color: hsl(322, 100%, 66%);
+    border-radius: 50px;
+    outline: none;
+    border:1px solid hsl(322, 100%, 66%);
+    padding: 5px 20px;
+}
+
+.nav-logo{
+    width: 120px;
+    height: 120px;
+}
+.nav-logo>img{
+    width:100%;
+}
