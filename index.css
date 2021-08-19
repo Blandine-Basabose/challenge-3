@@ -3,11 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family:"Open Sans";
+}
 .navbar-container{
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    /* : 30px 70px; */
+    padding: 40px 40px;
     background-color: white;
 }
 
@@ -19,11 +22,104 @@
     border:1px solid hsl(322, 100%, 66%);
     padding: 5px 20px;
 }
-
+.nav-btn>button:hover{
+    background-color: white;
+    color:hsl(321, 100%, 78%);
+    border:1px solid hsl(321, 100%, 78%);
+    cursor: pointer;
+}
 .nav-logo{
     width: 120px;
     height: 120px;
 }
 .nav-logo>img{
     width:100%;
+}
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:10px;
+}
+.content-container>h1{
+     
+    font-family:"Open Sans";
+    font-size: 50px;
+    font-weight: 900;
+}
+.content-container>p{
+    width:400px;
+    font-size:15px;
+    word-break:break-all;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding:30px;
+
+}
+.content-container>button{
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 50px;
+    outline: none;
+    border:1px solid hsl(322, 100%, 66%);
+    padding: 15px 35px;
+}
+.content-container>button:hover{
+    color: white;
+    background-color:hsl(321, 100%, 78%);
+    border:1px solid hsl(321, 100%, 78%);
+    cursor: pointer;
+}
+
+.front-image{
+    margin-top: 40px;
+    width: 600px;
+    height: 400px;
+}
+.front-image>img{
+    width: 100%;
+}
+
+.community-messages{
+    display: flex;
+    justify-content: space-between;
+    margin: 7% 31%;
+    
+}
+.community-messages>.community>img, .community-messages>.messages>img{
+    width: 30px;
+}
+.community-messages>.community>p, .community-messages>.messages>p{
+    margin:8px;
+    color: rgba(0, 0, 0, 0.562);
+}
+.community-messages>.community>h1, .community-messages>.messages>h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+.growtogether-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.growtogether-content>h1{
+    padding: 50px;
+    /* font-size: 20px; */
+    font-weight: 900;
+}
+/* .growtogether-container>p{
+    width:400px;
+    font-size:200px; 
+
+   
+} */
+.grow-together{
+    height: 500px;
+    width: 600px;
+    margin:50px ;
+}
+.grow-together>img{
+    width: 100%;
 }
