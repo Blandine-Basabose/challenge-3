@@ -9,8 +9,7 @@ body{
 .navbar-container{
     display: flex;
     justify-content: space-between;
-    /* : 30px 70px; */
-    padding: 40px 40px;
+    padding: 40px 60px;
     background-color: white;
 }
 
@@ -22,7 +21,7 @@ body{
     border:1px solid hsl(322, 100%, 66%);
     padding: 5px 20px;
 }
-.nav-btn>button:hover{
+    .nav-btn>button:hover{
     background-color: white;
     color:hsl(321, 100%, 78%);
     border:1px solid hsl(321, 100%, 78%);
@@ -43,18 +42,17 @@ body{
     margin:10px;
 }
 .content-container>h1{
-     
-    font-family:"Open Sans";
     font-size: 50px;
     font-weight: 900;
+    
 }
 .content-container>p{
     width:400px;
     font-size:15px;
-    word-break:break-all;
+    /* word-break:break-all; */
     text-align: center;
     line-height: 1.5;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     padding:30px;
 
 }
@@ -65,7 +63,7 @@ body{
     outline: none;
     border:1px solid hsl(322, 100%, 66%);
     padding: 15px 35px;
-}
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
 .content-container>button:hover{
     color: white;
     background-color:hsl(321, 100%, 78%);
@@ -99,27 +97,93 @@ body{
     font-weight: 900;
     font-size: 50px;
 }
-.growtogether-container{
+.grow-page{
+    position: relative;
+}
+.grow-page-items{
+    /* height: 50vh; */
+    background-color: #f6fbff;
+}
+.grow-top-wave{
+    position: relative;
+    top: 10px;
+    left: 0;
+}
+.grow-page-items{
+    display: flex;
+    justify-content: space-around;
+}
+.grow-page-items>img{
+    width: 100%;
+}
+.grow-text{
+    flex-direction: column;
+    padding: 80px;
+    align-items: center;
+    flex: 0.5;
+
+
+}
+
+.grow-image{
+    flex: 0.5;
+    
+}
+.grow-text>div>h4{
+    padding: 10px 0;
+}
+.grow-image>div{
+    width: 500px;
+    height: 500px;
+    margin-top: 40px;
+}
+.grow-image>div>img{
+    width: 100%;
+}
+/* 
+.grow-text>h4{
+    padding: 10px 0;
+}
+
+.grow-image>img{
+    width: 100%;
+} */
+@media (max-width:768px) {
+
+    .navbar-container{
     display: flex;
     justify-content: space-between;
-}
+    background-color: white;
+    padding: 20px;
 
-.growtogether-content>h1{
-    padding: 50px;
-    /* font-size: 20px; */
-    font-weight: 900;
-}
-/* .growtogether-container>p{
-    width:400px;
-    font-size:200px; 
+    }
+    .content-container{
+        margin:2px;
+    }
+    .content-container>h1{
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+    }
+    .content-container>button{
+       margin: 10px;
+       padding: 10px 30px ;
+    }
+    .navbar-container>p{
+        font-size: 13px;
+        padding: 10px;
+    }
+    .front-image{
+        width: 300px;
+        height: 200px; 
+    }
+    .community-messages{
+        flex-direction: column;
+        }
+    .community{
+        padding: 50px 0;
+    }
 
-   
-} */
-.grow-together{
-    height: 500px;
-    width: 600px;
-    margin:50px ;
-}
-.grow-together>img{
-    width: 100%;
+
+  
 }
