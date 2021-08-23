@@ -28,36 +28,35 @@ body{
     border:1px solid hsl(321, 100%, 78%);
     cursor: pointer;
 }
-.nav-logo{
-    width: 120px;
-    height: 120px;
+    .nav-logo{
+        width: 120px;
+        height: 120px;
 }
 .nav-logo>img{
     width:100%;
 }
-.content-container{
+.content-container, .footer-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin:10px;
 }
-.content-container>h1{
-    font-size: 50px;
+.content-container>h1, .footer-container>h4{
+    font-size: 40px;
     font-weight: 900;
+  
     
 }
 .content-container>p{
     width:400px;
     font-size:15px;
-    /* word-break:break-all; */
     text-align: center;
     line-height: 1.5;
-    /* letter-spacing: 1px; */
     padding:30px;
 
 }
-.content-container>button{
+.content-container>button, .footer-container>button{
     color: white;
     background-color: hsl(322, 100%, 66%);
     border-radius: 50px;
@@ -66,7 +65,7 @@ body{
     padding: 15px 35px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.content-container>button:hover{
+.content-container>button:hover, .footer-container>button:hover{
     color: white;
     background-color:hsl(321, 100%, 78%);
     border:1px solid hsl(321, 100%, 78%);
@@ -99,58 +98,96 @@ body{
     font-weight: 900;
     font-size: 50px;
 }
-.grow-page{
+.grow-page, .users-page{
     position: relative;
 }
-.grow-page-items{
-    /* height: 50vh; */
+.grow-page-items, .users-page-items{
+ 
     background-color: #f6fbff;
+    display: flex;
+    justify-content: space-around;
 }
 .grow-top-wave{
     position: relative;
     top: 10px;
     left: 0;
 }
-.grow-page-items{
-    display: flex;
-    justify-content: space-around;
-}
-.grow-page-items>img{
+
+.grow-page-items>img, .users-page-items>img{
     width: 100%;
 }
-.grow-text{
-    /* display: flex;
-    flex-direction: column; */
+.grow-text, .users-text{
+
     padding: 80px;
     align-items: center;
     flex: 0.5;
-    margin: 0 80px ;
-
+    margin: 80px 0 0 80px;
 }
 
-.grow-image{
+.grow-image, .user-image{
     flex: 0.5;
     
 }
-.grow-text>div>h4{
-    padding: 10px 0;
+
+.grow-image>div, .users-image>div{
+    width: 400px;
+    height: 400px;
+    margin: 80px 80px 0 0;
 }
-.grow-image>div{
-    width: 500px;
-    height: 500px;
-    margin-top: 40px;
-}
-.grow-image>div>img{
+.grow-image>div>img, .users-image>div>img{
     width: 100%;
-}
-/* 
-.grow-text>h4{
-    padding: 10px 0;
 }
 
-.grow-image>img{
-    width: 100%;
-} */
+.grow-text>div>h4, .users-text>div>h4{
+    padding: 10px 0;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 2; 
+}
+
+.grow-text>div>p, .users-text>div>p{
+    font-size: 15px;
+}
+
+.Flowing-conversations{
+    display: flex;
+    justify-content: space-between;
+
+}
+.flow-image>img{
+width: 100%;
+}
+.flow-image>div>img{
+    width: 400px;
+    height: 300px;
+    
+}
+.flow-image{
+    flex: 0.5;
+    margin: 80px 0 0 150px;
+
+}
+
+.flow-text{
+    padding: 80px;
+    /* align-items: center; */
+    flex: 0.5;
+    margin: 80px 0 0 80px;
+}
+.flow-text>h4{
+    padding: 10px 0;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 2;
+
+}
+.flow-text>p{
+    font-size: 15px;
+}
+
+
+
+
 @media (max-width:768px) {
 
     .navbar-container{
@@ -160,15 +197,15 @@ body{
     padding: 20px;
 
     }
-    .content-container{
+    .content-container, .footer-container{
         margin:2px;
     }
-    .content-container>h1{
-        font-size: 25px;
+    .content-container>h1, .footer-container>h4{
+        font-size: 23px;
         text-align: center;
         padding: 10px;
     }
-    .content-container>button{
+    .content-container>button, .footer-container>button{
        margin: 10px;
        padding: 10px 30px ;
     }
@@ -186,7 +223,48 @@ body{
     .community{
         padding: 50px 0;
     }
+    .grow-page-items, .users-page-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column-reverse;
+    }
 
+    .grow-image>div, .users-image>div{
+        width: 250px;
+        height: 250px;
+        margin: 30px;
+    }
+    .grow-text, .users-text{
+      
+        padding: 20px;
+        margin: 0 20px;
+        text-align: center;
+    }
+    
+    .grow-text>div>h4, .users-text>div>h4{
+        font-size: 25px;
+    }
+    .Flowing-conversations{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+    }
+    .flow-image>div>img{
+        width: 250px;
+        height: 200px;
+        margin-right: 150px;
+    }
+    .flow-text{
+      
+        padding: 20px;
+        margin: 40px 0 0 20px;
+        text-align: center;
+    }
+    
+    .flow-text>h4{
+        font-size: 25px;
+    }
 
-  
 }
