@@ -40,13 +40,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin:10px;
 }
 .content-container>h1, .footer-container>h4{
     font-size: 40px;
-    font-weight: 900;
-  
-    
+    font-weight: 900; 
 }
 .content-container>p{
     width:400px;
@@ -125,8 +122,7 @@ body{
 }
 
 .grow-image, .user-image{
-    flex: 0.5;
-    
+    flex: 0.5; 
 }
 
 .grow-image>div, .users-image>div{
@@ -165,12 +161,10 @@ width: 100%;
 .flow-image{
     flex: 0.5;
     margin: 80px 0 0 150px;
-
 }
 
 .flow-text{
     padding: 80px;
-    /* align-items: center; */
     flex: 0.5;
     margin: 80px 0 0 80px;
 }
@@ -179,12 +173,92 @@ width: 100%;
     font-size: 40px;
     font-weight: 900;
     line-height: 2;
-
 }
 .flow-text>p{
     font-size: 15px;
 }
 
+.footer-page{
+    margin-top: 150px;
+    color: white;
+}
+.footer-top-wave{
+    position: relative;
+    top:10px;
+    left : 0;
+}
+
+.footer-content{
+    padding: 100px;
+    background-color: #00252E;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.footer-contents-left{
+    flex:0.5;
+   
+}
+.footer-contents-left>p{
+    padding: 20px 0;
+    width: 50%;
+    
+
+}
+
+.contact-us{
+   display: flex;
+   justify-content: space-between;
+   flex-direction:column;
+}
+.phone-contact{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    /* justify-content: space-between; */
+}
+
+.phone-contact>div{
+    margin-right: 20px;
+
+}
+.email-contact{
+ display: flex;
+    align-items: center;
+}
+.email-contact>div{
+    margin-right: 20px;
+
+}
+
+.footer-contents-right{
+    flex: 0.5;
+  margin-left: 120px;
+
+}
+.footer-contents-right>p{
+    padding: 40px 0;
+    width: 50%;
+
+}
+.footer-contents-right>.email-box>button{
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    outline: none;
+    border:1px solid hsl(322, 100%, 66%);
+    padding: 13px 30px;
+}
+
+.email{
+    width: 250px;
+    padding: 13px 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+}
 
 
 
