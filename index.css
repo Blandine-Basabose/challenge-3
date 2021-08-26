@@ -184,7 +184,7 @@ width: 100%;
 }
 .footer-top-wave{
     position: relative;
-    top:10px;
+    top:8px;
     left : 0;
 }
 
@@ -434,5 +434,4 @@ margin-top: 70px;
 .footer-content{
     padding: 40px;
 }
-
 }
